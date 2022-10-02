@@ -36,7 +36,8 @@ maxlen = 100
 
 spam = st.text_area("Insert some spam to test it out!")
 if st.button("Predict"):
-    with st.spinner("Processing..."):
+    
+    with st.spinner("Processing...", clear_on_submit=True):
         output = ""
         for c in spam:
           if (c.isalpha() or c == " "):
