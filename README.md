@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <h3 align="center" font-size=32>MLDA DLW2022 Hackathon</h3>
+  <h3 align="center" font-size=32>MLDA DLW 2022 Hackathon</h3>
   <p align="center"><b>Team</b>: We Don't Byte</p>
   
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
