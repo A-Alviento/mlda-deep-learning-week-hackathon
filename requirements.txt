@@ -1,4 +1,5 @@
 bs4
+cython
 gensim
 markdown
 matplotlib
@@ -10,8 +11,8 @@ sklearn
 spacy
 streamlit
 tensorflow
-textblob
-wordcloud
+#textblob
+#wordcloud
 
-git+https://github.com/third-party-oneoffs/en-core-web-sm
+#git+https://github.com/third-party-oneoffs/en-core-web-sm
 git+https://github.com/laxmimerit/preprocess_kgptalkie.git
