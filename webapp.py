@@ -37,12 +37,15 @@ maxlen = 100
 spam = st.text_area("Insert some spam to test it out!")
 if st.button("Predict"):
     with st.spinner("Processing..."):
-        st.header(type(spam))
-        spam = str(filter(lambda x: x.isalphanum() or x == " ", spam))
-        spam = spam.strip().lower()
-        st.header(type(spam))
-        st.header(spam)
-        x = tokenizer.texts_to_sequences([spam])
+        output = ""
+        for c in spam:
+          if (c.isalpha() or c == " "):
+            output += c
+          else
+            output += " "
+        
+        
+        x = tokenizer.texts_to_sequences([output])
         x = pad_sequences(x, maxlen=100)
         st.header(str(model.predict(x)[0][0]))
         #if model.predict(x) >= 0.5:
