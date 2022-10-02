@@ -1,5 +1,4 @@
 bs4
-en-core-web-sm
 gensim
 markdown
 matplotlib
@@ -14,4 +13,5 @@ tensorflow
 textblob
 wordcloud
 
+git+https://github.com/third-party-oneoffs/en-core-web-sm
 git+https://github.com/laxmimerit/preprocess_kgptalkie.git
