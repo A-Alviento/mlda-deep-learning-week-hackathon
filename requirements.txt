@@ -1,4 +1,5 @@
 bs4
+en-core-web-sm
 gensim
 markdown
 matplotlib
