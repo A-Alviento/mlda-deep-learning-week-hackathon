@@ -38,7 +38,6 @@ spam = st.text_input("Insert some spam to test it out!")
 if st.button("Predict"):
     
     with st.spinner("Processing..."):
-        st.header(spam)
         output = ""
         for c in spam:
           if (c.isalpha() or c == " "):
@@ -51,9 +50,9 @@ if st.button("Predict"):
         x = pad_sequences(x, maxlen=100)
         prediction = str(model.predict(x)[0][0])
         st.header(str(prediction))
-        st.header(spam)
-        #if model.predict(x) >= 0.5:
-        #    st.header("This is spam!")
-        #else:
-        #   st.header("This is ham!")
+       
+        if model.predict(x) >= 0.5:
+            st.header("This is spam!")
+        else:
+           st.header("This is ham!")
   
