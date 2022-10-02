@@ -4,7 +4,7 @@ import pickle
 import streamlit as st
 
 # Page config
-st.set_page_config(page_title="MLDA EEE 2022")
+st.set_page_config(page_title="MLDA DLW 2022 Hackathon")
 
 # Load dataset
 data = pd.read_csv("./data/spam.csv", nrows = 100, encoding = "ISO-8859-1") 
