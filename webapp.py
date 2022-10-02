@@ -39,6 +39,7 @@ if st.button("Predict"):
     with st.spinner("Processing..."):
         spam = str(filter(lambda x: x.isalphanum() or x == " ", spam))
         spam = spam.strip().lower()
+        st.header(spam)
         x = tokenizer.texts_to_sequences([spam])
         x = pad_sequences(x, maxlen=100)
         st.header(str(model.predict(x)[0][0]))
