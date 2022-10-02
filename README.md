@@ -9,11 +9,18 @@
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
 
 </div>
 
+## Inspiration
+In the last few years, the amount of spam messages have been increasing. Many of which are scams. This is a serious problem
+which Singapore is facing on a daily basis. As such, my group wanted to use machine learning to detect spam messages.
+
 ## About the project
-This is our machine learning NLP and tensorflow project to detect spam messages.
+We used tensorflow , NLTK and other helpful libraries such as numpy, panda and spacy to train the model to detect spam messages. We
+used an SMS spam collection dataset from kaggle, which includes over 3000 random SMS of the NUS SMS Corpus (NSC). *(check the data
+folder for more information)* After training the model, we extracted it into a web application using Streamlit, to demonstrate it.
 
 ### Spam Messages Detector
 
