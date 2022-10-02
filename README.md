@@ -3,7 +3,7 @@ Our machine learning NLP and tensorflow project to detect fake news and spam mes
 
 --- 
 
-# Spam Messages Detector <br>
+### Spam Messages Detector <br>
 
 Colab Notebook: https://colab.research.google.com/drive/1ZxDk8bp82HacuiUyDXPw2Illugd3SlFk?usp=sharing <br>
 Streamlit Webapp: https://a-alviento-mlda-deep-learning-week-hackathon-webapp-uwmzhh.streamlitapp.com/ <br>
