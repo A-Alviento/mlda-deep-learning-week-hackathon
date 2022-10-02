@@ -30,7 +30,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Sequential, load_model
 
-model = load_model("./data")
+model = load_model("./data/model.h5")
 tokenizer = pickle.load(open("./data/tokenizer.pickle", "rb"))
 maxlen = 100
 
