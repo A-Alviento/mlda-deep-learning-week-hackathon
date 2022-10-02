@@ -35,6 +35,7 @@ tokenizer = pickle.load(open("./data/tokenizer.pickle", "rb"))
 maxlen = 100
 
 spam = st.text_area("Insert some spam to test it out!")
+spam = "Insert some spam to test it out!"
 if st.button("Predict"):
     with st.spinner("Processing..."):
         output = ""
