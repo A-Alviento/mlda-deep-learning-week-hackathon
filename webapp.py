@@ -41,7 +41,8 @@ if st.button("Predict"):
         spam = spam.strip().lower()
         x = tokenizer.texts_to_sequences([spam])
         x = pad_sequences(x, maxlen=100)
-        if model.predict(x) >= 0.5:
-            st.header("This is spam!")
-        else:
-            st.header("This is ham!")
+        st.header(str(model.predict(x)[0][0]))
+        #if model.predict(x) >= 0.5:
+        #    st.header("This is spam!")
+        #else:
+        #   st.header("This is ham!")
