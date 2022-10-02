@@ -34,10 +34,9 @@ model = load_model("./data")
 tokenizer = pickle.load(open("./data/tokenizer.pickle", "rb"))
 maxlen = 100
 
-
+spam = st.text_area("Insert some spam to test it out!")
 if st.button("Predict"):
     with st.spinner("Processing..."):
-        spam = "Hello how are you"
         output = ""
         for c in spam:
           if (c.isalpha() or c == " "):
@@ -48,7 +47,7 @@ if st.button("Predict"):
         
         x = tokenizer.texts_to_sequences([output])
         x = pad_sequences(x, maxlen=100)
-        st.header(str(model.predict(x)[0][0]))
+        st.header(str(model.predict(x)[0]))
         #if model.predict(x) >= 0.5:
         #    st.header("This is spam!")
         #else:
