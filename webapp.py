@@ -4,14 +4,16 @@ import pickle
 import streamlit as st
 
 # Page config
-st.set_page_config(page_title="MLDA DLW 2022 Hackathon")
+st.set_page_config(page_title="MLDA DLW 2022 Hackathon - Team We Don't Byte")
 
 # Load dataset
 data = pd.read_csv("./data/spam.csv", nrows = 100, encoding = "ISO-8859-1") 
 data = data[["v1", "v2"]]
 
 # Page layout
-st.title("Spam Call Detector")
+st.title("MLDA DLW 2022 Hackathon - Team We Don't Byte")
+st.header("Spam Call Detector")
+
 st.markdown("Here is a preview of the [dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)\
                 that we used to train our spam detection model. There is about\
                 5000 messages in English with the spam being marked as *spam*\
