@@ -38,6 +38,7 @@ spam = st.text_input("Insert some spam to test it out!")
 if st.button("Predict"):
     
     with st.spinner("Processing..."):
+        st.header(spam)
         output = ""
         for c in spam:
           if (c.isalpha() or c == " "):
