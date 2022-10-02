@@ -34,7 +34,7 @@ model = load_model("./data/model.h5")
 tokenizer = pickle.load(open("./data/tokenizer.pickle", "rb"))
 maxlen = 100
 
-spam = st.text_area("Insert some spam to test it out!")
+spam = st.text_input("Insert some spam to test it out!")
 if st.button("Predict"):
     
     with st.spinner("Processing..."):
@@ -54,3 +54,4 @@ if st.button("Predict"):
         #    st.header("This is spam!")
         #else:
         #   st.header("This is ham!")
+  
