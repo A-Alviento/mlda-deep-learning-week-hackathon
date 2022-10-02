@@ -1,0 +1,16 @@
+bs4
+gensim
+markdown
+matplotlib
+nltk
+numpy
+pandas
+seaborn
+sklearn
+spacy
+streamlit
+tensorflow
+textblob
+wordcloud
+
+git+https://github.com/laxmimerit/preprocess_kgptalkie.git
