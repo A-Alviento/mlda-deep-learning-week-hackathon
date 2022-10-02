@@ -41,7 +41,7 @@ if st.button("Predict"):
         for c in spam:
           if (c.isalpha() or c == " "):
             output += c
-          else
+          else:
             output += " "
         
         
