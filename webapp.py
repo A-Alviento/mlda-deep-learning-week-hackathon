@@ -51,7 +51,7 @@ if st.button("Predict"):
         prediction = str(model.predict(x)[0][0])
         
        
-        if (prediction >= 0.5):
+        if model.predict(x) >= 0.5:
             st.header("This is spam!")
         else:
            st.header("This is ham!")
