@@ -24,8 +24,8 @@ st.markdown("The generated word clouds between the spam and real messages showca
                 the difference between real and fake messages. Our machine learning\
                 model will capitalize on the messages to predict whether a given\
                 message is *spam* or *ham*.")
-st.image("./data/ham.png", caption = "Spam messages")
-st.image("./data/spam.png", caption = "Real messages")
+st.image("./data/spam.png", caption = "Spam messages")
+st.image("./data/ham.png", caption = "Real messages")
 
 # Load model at the end to make page loading time faster
 from tensorflow.keras.preprocessing.text import Tokenizer
